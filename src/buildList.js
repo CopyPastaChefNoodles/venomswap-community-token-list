@@ -5,7 +5,7 @@ const harmony_testnet = require("./tokens/harmony-testnet.json");
 module.exports = function buildList() {
   const parsed = version.split(".");
   return {
-    name: "Venomswap Community",
+    name: "CopyPasta Community",
     timestamp: new Date().toISOString(),
     version: {
       major: +parsed[0],
@@ -13,8 +13,8 @@ module.exports = function buildList() {
       patch: +parsed[2],
     },
     tags: {},
-    logoURI: "https://d1xrz6ki9z98vb.cloudfront.net/venomswap/logos/venomswap-128x128.png",
-    keywords: ["venomswap", "community"],
+    logoURI: "https://www.svgrepo.com/show/244450/spaghetti-pasta.svg",
+    keywords: ["copypasta", "community"],
     tokens: [...harmony_mainnet, ...harmony_testnet]
       // sort them by symbol for easy readability
       .sort((t1, t2) => {
